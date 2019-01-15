@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--meta tag to make viewport responsive and chage according to screen size-->
+	<title>Where to Travel?</title>
+	<link href="wheretotravel.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
+	<!--font source-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="index.js"></script>
+</head>
+
+<!-- Main page begins -->
+<div class="about">
+  <!--main div where we put title and row div with 2 columns-->
+  <h1>Where Should I Travel To?</h1>
+  <!--title-->
+  <div class="row">
+    <!--row div; input on one side and output on the other-->
+    <div class="col-6">
+      <!--column div; col-6 because we want them to be half the page-->
+      <div class="form">
+        <!--form div-->
+   Budget:<br>
+        <!--name for dropdown list and break-->
+  <select id="budget"name="budget">
+    <!--select element defines dropdown list we name it accordingly-->
+  <option value="0">Select</option>
+    <!--option element defines option that can be selected, set to 0 and name Select as default options-->
+  <option value="High">High</option>
+    <!--value of input and name-->
+  <option value="Moderate">Moderate</option>
+    <!--value of input and name-->
+  <option value="Low">Low</option>
+    <!--value of input and name-->
+  </select><br><br>
+        <!--close select tag plus breaks-->
+  Climate:<br>
+        <!--repeat for climate choices-->
+  <select id="weather"name="weather">
+  <option value="0">Select</option>
+  <option value="Hot">Hot</option>
+  <option value="Moderate">Moderate</option>
+  <option value="Cold">Cold</option>
+  </select><br><br>
+ Month:<br>
+         <!--repeat for month choices-->
+  <select id="month"name="month">
+  <option value="0">Select</option>
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="August">August</option>
+  <option value="September">September</option>
+  <option value="October">October</option>
+  <option value="November">November</option>
+  <option value="December">December</option>
+  </select><br><br>
+   Activities:<br>
+         <!--name for checkboxes and name-->
+  <input type="checkbox" name="activities" value="Adventure">Adventure
+        <!--type defines a checkbox so it allows for multiple options, all checked items will go into an array-->
+  <input type="checkbox" name="activities" value="Beach">Beach
+  <input type="checkbox" name="activities" value="Museums">Museums<br>
+  <input type="checkbox" name="activities" value="Archeological">Archeological
+  <input type="checkbox" name="activities" value="Shopping">Shopping
+  <input type="checkbox" name="activities" value="Dining">Dining
+  <br><br>
+  <input id="button" type="submit" value="Submit">
+        <!--submit button-->
+      </div>
+      <!--end of form div-->
+    </div>
+    <!--end of first column-->
+  
+    <div class="col-6">
+      <!--start of output div-->
+      <div class="result">
+        <!--create an area for the results to be printed-->
+        <h3 id="output2"></h3>
+        <!--first line-->
+        <h1 id="output"></h1>
+        <!--city-->
+      </div>
+      <!--end of results div-->
+    </div>
+    <!--end of column div-->
+
+  </div>
+  <!--end of row div-->
+
+</div>
+
+<!-- Main page ends -->
